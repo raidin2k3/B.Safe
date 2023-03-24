@@ -50,6 +50,16 @@ div{
 }
 .img{
     position: relative;
-    top: -448px;
+    top: -450px;
     left:-100px;
+}
+.square2{
+    position: relative;
+    top: -1387.5px;
+    left: -7px;
+    width: 1902px;
+    height: 40px;
+    background-color:white;
+    font-size:25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
