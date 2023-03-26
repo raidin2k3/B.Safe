@@ -1,0 +1,44 @@
+body{
+    overflow: hidden;
+}
+.square{
+    background-color: white;
+    height: 35px;
+    width: 1920px;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    font-size: 25px;
+}
+.square2{
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: -200px;
+    left: 450px;
+}
+.square3{
+    background-color:#298CD6;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.square4{
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: -600px;
+    left: 1000px;
+}
+.square5{
+    background-color: #298CD6;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
