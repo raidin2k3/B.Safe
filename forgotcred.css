@@ -1,0 +1,28 @@
+.square{
+    position: relative;
+    top: -40px;
+    left: 680px;
+    height: 300px;
+    width: 500px;
+    background-color: #36393e;
+    border-radius: 50px;
+}
+.p1{
+    color: white;
+    position: relative;
+    top: -310px;
+    left:890px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.p2{
+    color: white;
+    position: relative;
+    top: -265px;
+    left:900px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+body{
+    overflow: hidden;
+}
