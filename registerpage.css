@@ -2,7 +2,7 @@
     position: relative;
     top: -40px;
     left: 680px;
-    height: 425px;
+    height: 500px;
     width: 500px;
     background-color: #36393e;
     border-radius: 50px;
@@ -10,16 +10,24 @@
 .p1{
     color: white;
     position: relative;
-    top: -435px;
-    left:825px;
+    top: -515px;
+    left:870px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
 .p2{
     color: white;
     position: relative;
-    top: -375px;
+    top: -400px;
     left:870px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.p3{
+    color: white;
+    position: relative;
+    top: -460px;
+    left:890px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
