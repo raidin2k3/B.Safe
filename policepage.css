@@ -1,0 +1,60 @@
+body{
+    overflow: hidden;
+}
+.square{
+    background-color: white;
+    height: 35px;
+    width: 1920px;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    font-size: 25px;
+}
+.square2{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -200px;
+    left: 350px;
+}
+.square3{
+    background-color:#298CD6;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.square4{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -500px;
+    left: 775px;
+}
+.square5{
+    background-color: #298CD6;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.square6{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -800px;
+    left: 1200px;
+}
+.square7{
+    background-color: #298CD6;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
