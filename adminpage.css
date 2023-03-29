@@ -1,0 +1,17 @@
+body{
+    overflow: hidden;
+}
+.square{
+    background-color: white;
+    height: 35px;
+    width: 1920px;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    font-size: 25px;
+}
+.square2{
+    background-color: white;
+    height: 75px;
+    width: 75px;
+}
