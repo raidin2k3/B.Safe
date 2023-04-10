@@ -5,7 +5,7 @@ async function main() {
   try {
     await client.connect();
     await listDatabases(client);
-    await find(client)
+    await find(client,"pmishra2k3","pass1234");
   } catch (e) {
     console.error(e);
   } finally {
@@ -13,8 +13,17 @@ async function main() {
   }
 }
 main().catch(console.error);
-async function find(client,namelist){
-  const result=await client.db("bsafe").collection("userlogs").findOne({name: find});
+async function insert(client,inst){
+  const result=await client.db("bsafe").collection("userlogs").insertOne(inst);
+  if (result){
+    console.log("Data added successfully");
+  }
+  else{
+    console.log("Data could not be added");
+  }
+}
+async function find(client,user,password){
+  const result=await client.db("bsafe").collection("userlogs").findOne({User_id: user,Password: password});
   if (result){
     console.log(result);
   }
