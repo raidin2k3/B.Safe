@@ -6,6 +6,9 @@
     "author": "Jane Doe",
     "license": "MIT",
     "scripts": {
-      "start": "electron ."
+        "start": "electron ."
+    },
+    "dependencies": {
+        "mongodb": "^5.2.0"
     }
-  }
+}
