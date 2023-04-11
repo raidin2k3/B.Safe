@@ -1,12 +1,12 @@
 function findl(){
     if (typeof window !== "undefined") {
-        const username=document.getElementById("user").value;
-        const pass=document.getElementById("password").value;
-        const { MongoClient, ServerApiVersion } = require('mongodb');
-        alert("hi");
+        var username=document.getElementById("user").value;
+        var pass=document.getElementById("password").value;
+        const { MongoClient, ServerApiVersion } = import('mongodb');
         async function main(){
             const uri = "mongodb+srv://user1:pass@bsafelogs.xj9kksu.mongodb.net/?retryWrites=true&w=majority";
             const client = new MongoClient(uri);
+            alert("hi");
             try {
                 alert("hi");
                 await client.connect();
