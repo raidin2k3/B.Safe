@@ -2,7 +2,7 @@ function findl(){
     if (typeof window !== "undefined") {
         var username=document.getElementById("user").value;
         var pass=document.getElementById("password").value;
-        const { MongoClient, ServerApiVersion } = import('mongodb');
+        const { MongoClient } = import('mongodb');
         async function main(){
             const uri = "mongodb+srv://user1:pass@bsafelogs.xj9kksu.mongodb.net/?retryWrites=true&w=majority";
             const client = new MongoClient(uri);
