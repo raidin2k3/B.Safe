@@ -2,7 +2,37 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="loginpage.css">
-    <script type="module" src="connect.js"></script>
+    <script type="module" src="login.js">
+        const { MongoClient, ServerApiVersion } = import('mongodb');
+        async function main() {
+            const uri = "mongodb+srv://user1:pass@bsafelogs.xj9kksu.mongodb.net/?retryWrites=true&w=majority";
+            const client = new MongoClient(uri);
+            try {
+                await client.connect();
+                await listDatabases(client);
+                await find(client,"pmishra2k3","pass1234");
+            } catch (e) {
+                console.error(e);
+            } finally {
+                await client.close();
+            }
+        }
+        main().catch(console.error);
+        async function find(client,user,password){
+            const result=await client.db("bsafe").collection("userlogs").findOne({User_id: user,Password: password});
+            if (result){
+                console.log(result);
+            }
+            else{
+                console.log("No data found");
+            }
+        }
+        async function listDatabases(client){
+            databasesList = await client.db().admin().listDatabases();
+            console.log("Databases:");
+            databasesList.databases.forEach(db => console.log(` -[${db.name}]`));
+        };
+    </script>
 </head>
 <body background="5533516.jpg">
     <div class="body">
@@ -12,7 +42,7 @@
         <input type="text" name="email" id="user" style="width: 400px;height: 25px;position: relative;top:-420px;left: 725px;background-color: rgba(39, 35, 35, 0.843);color: white;">
         <div class="p2"><b>Password</b></div>
         <input type="text" name="pass" id="password" style="width: 400px;height: 25px;position: relative;top:-350px;left: 725px;background-color: rgba(39, 35, 35, 0.843);color: white;">
-        <button style="height: 40px;width: 130px;background-color: white;color:black;font-family: Arial, Helvetica, sans-serif;font-size: 20px;border-radius: 50px;position: relative;top: -270px;left: 455px;" onclick=""><b>Sign in</b></button>
+        <button style="height: 40px;width: 130px;background-color: white;color:black;font-family: Arial, Helvetica, sans-serif;font-size: 20px;border-radius: 50px;position: relative;top: -270px;left: 455px;" onclick="find(client,document.getElementById('user').value,document.getElementById('password').value)"><b>Sign in</b></button>
         <a href="forgotcred.html" style="color: white;position: relative;top: -225px;left: 312px;">Forgot your credentials</a>
         <a href="registerpage.html" style="color: white;position: relative;top: -190px;left: 120px;">Haven't signed up yet? Register now!</a>
     </div>
