@@ -13,6 +13,7 @@
         "@mongodb-js/zstd": "^1.1.0",
         "browserify": "^17.0.0",
         "browserify-fs": "^1.0.0",
+        "dns": "^0.2.2",
         "firebase": "^9.19.1",
         "fs": "^0.0.1-security",
         "jsdom": "^21.1.1",
